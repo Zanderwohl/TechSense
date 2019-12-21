@@ -11,7 +11,7 @@
 \contentsline {subsection}{\numberline {4.1}Abilities}{6}{subsection.4.1}% 
 \contentsline {section}{\numberline {5}Session Zero}{6}{section.5}% 
 \contentsline {paragraph}{An Example Introduction}{6}{section*.4}% 
-\contentsline {paragraph}{}{6}{section*.5}% 
+\contentsline {paragraph}{}{7}{section*.5}% 
 \contentsline {paragraph}{An Example Relationship}{7}{section*.6}% 
 \contentsline {paragraph}{}{7}{section*.7}% 
 \contentsline {section}{\numberline {6}List of Skills}{8}{section.6}% 
@@ -44,20 +44,30 @@
 \contentsline {section}{\numberline {7}List of Abilities}{9}{section.7}% 
 \contentsline {paragraph}{Astrogator}{9}{section*.32}% 
 \contentsline {paragraph}{Dialectist}{9}{section*.33}% 
+\contentsline {paragraph}{Experimenter}{9}{section*.34}% 
+\contentsline {paragraph}{Star-Pilot}{9}{section*.35}% 
 \contentsline {section}{\numberline {8}The \textit {Stone's Throw}}{9}{section.8}% 
-\contentsline {subsubsection}{\numberline {}Oxygen}{9}{subsubsection.8.0.1}% 
-\contentsline {subsection}{\numberline {8.1}Other Ships}{9}{subsection.8.1}% 
+\contentsline {subsection}{\numberline {8.1}Description}{9}{subsection.8.1}% 
+\contentsline {subsection}{\numberline {8.2}Daily Life}{10}{subsection.8.2}% 
+\contentsline {subsection}{\numberline {8.3}Energy Source}{10}{subsection.8.3}% 
+\contentsline {subsection}{\numberline {8.4}Engines}{10}{subsection.8.4}% 
+\contentsline {subsection}{\numberline {8.5}Structure and Hull}{10}{subsection.8.5}% 
+\contentsline {subsection}{\numberline {8.6}Armaments}{10}{subsection.8.6}% 
+\contentsline {subsection}{\numberline {8.7}Sensors}{10}{subsection.8.7}% 
+\contentsline {subsection}{\numberline {8.8}Shuttles}{10}{subsection.8.8}% 
+\contentsline {subsubsection}{\numberline {}Oxygen}{10}{subsubsection.8.8.1}% 
+\contentsline {subsection}{\numberline {8.9}Other Ships}{10}{subsection.8.9}% 
 \contentsline {section}{\numberline {9}Other Information}{10}{section.9}% 
 \contentsline {subsection}{\numberline {9.1}The Game}{10}{subsection.9.1}% 
 \contentsline {subsection}{\numberline {9.2}Inspiration and Further Reading / Playing}{10}{subsection.9.2}% 
-\contentsline {paragraph}{Lasers and Feelings}{10}{section*.34}% 
-\contentsline {paragraph}{The Left Hand of Darkness}{10}{section*.35}% 
-\contentsline {paragraph}{The Rolling Stones}{10}{section*.36}% 
-\contentsline {paragraph}{Space Cadet}{10}{section*.37}% 
-\contentsline {paragraph}{Citizen of the Galaxy}{10}{section*.38}% 
-\contentsline {paragraph}{The Moon is a Harsh Mistress}{10}{section*.39}% 
-\contentsline {paragraph}{Star Trek: The Original Series}{11}{section*.40}% 
-\contentsline {paragraph}{The Forbidden Planet}{11}{section*.41}% 
+\contentsline {paragraph}{Lasers and Feelings}{10}{section*.36}% 
+\contentsline {paragraph}{The Left Hand of Darkness}{10}{section*.37}% 
+\contentsline {paragraph}{The Rolling Stones}{11}{section*.38}% 
+\contentsline {paragraph}{Space Cadet}{11}{section*.39}% 
+\contentsline {paragraph}{Citizen of the Galaxy}{11}{section*.40}% 
+\contentsline {paragraph}{The Moon is a Harsh Mistress}{11}{section*.41}% 
+\contentsline {paragraph}{Star Trek: The Original Series}{11}{section*.42}% 
+\contentsline {paragraph}{The Forbidden Planet}{11}{section*.43}% 
 \contentsline {subsection}{\numberline {9.3}The Book}{11}{subsection.9.3}% 
 \contentsline {subsection}{\numberline {9.4}Modifying the Book}{11}{subsection.9.4}% 
-\contentsline {subsection}{\numberline {9.5}Licensing}{11}{subsection.9.5}% 
+\contentsline {subsection}{\numberline {9.5}Licensing}{12}{subsection.9.5}% 

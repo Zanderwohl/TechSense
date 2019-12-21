@@ -3,6 +3,7 @@ import numpy as np
 
 def paragraph(header, content):
     paragraph = "\n\n\\paragraph{" + header + "}\n"
+    paragraph += "\\hypertarget{Skill" + header.replace(" ", "") + "}{}\n"
     paragraph += content
     return paragraph
 
@@ -33,16 +34,21 @@ file_contents += "\n%Generated based on data in 'skills.csv'"
 file_contents += "\n%And assembled via generate_skills.py"
 
 file_contents += "\n\n\\section{List of \\skillC s}"
+file_contents += "\n\\hypertarget{skills}{}"
 
 file_contents += "\n\n\\subsection{\\feelingsC}"
+file_contents += "\n\\hypertarget{skillsFeelings}{}"
 for skill in skills_feelings:
     file_contents += paragraph(skill[0], skill[1])
+	
 
 file_contents += "\n\n\\subsection{\\lasersC}"
+file_contents += "\n\\hypertarget{skillsLasers}{}"
 for skill in skills_lasers:
     file_contents += paragraph(skill[0], skill[1])
 
 file_contents += "\n\n\\section{List of \\abilityPC}"
+file_contents += "\n\\hypertarget{abilities}{}"
 for ability in abilities:
     file_contents += paragraph(ability[0], ability[1])
 
