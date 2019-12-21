@@ -1,0 +1,77 @@
+%Typeset using XeLaTex
+\documentclass[12pt]{article}
+\usepackage[margin=1.0in]{geometry}
+\setlength{\parindent}{4em}
+
+%hyperlinks the table of contents.
+\usepackage{hyperref}
+
+%info about the book
+\input{metainfo.tex}
+
+%\title{\getTitle}
+\title{%
+  \getTitle \\
+  \large \getSubtitle}
+\author{
+ 	\zandy\\
+  \texttt{alexander@zanderlowry.com}
+  \and
+     \sam\\
+  \texttt{samueltwina@yahoo.com}
+}
+\date{\getDate}
+
+%Heading styles
+%https://tex.stackexchange.com/questions/210871/latex-page-numbering-by-section#210872
+\renewcommand{\thesection}{\arabic{section}}						%Sections are A->Z
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}	%Subsections add -n
+\renewcommand{\thesubsubsection}{}							%Subsubsection labels are blank.
+
+%\renewcommand{\thesection}{\Alph{section}}						%Sections are A->Z
+%\renewcommand{\thesubsection}{\Alph{section}.\arabic{subsection}}	%Subsections add -n
+%\renewcommand{\thesubsubsection}{}							%Subsubsection labels are blank.
+
+%header setup
+%https://www.overleaf.com/learn/latex/Headers_and_footers
+\usepackage{fancyhdr}
+\lhead{}
+\chead{\getTitle}
+\rhead{\thepage}
+\lfoot{\website}
+\cfoot{\getTitleShort\, Version \getVersion}
+\rfoot{Publish Date \getDate}
+
+
+
+\begin{document}
+
+%Title page
+\pagestyle{empty}
+\maketitle
+
+\newpage
+\pagestyle{fancy}
+
+%Table of Contents
+\setcounter{tocdepth}{2} %don't include anything lower than subsections
+\tableofcontents
+
+\newpage
+\input{introduction.tex}
+
+\input{feelingsvslasers.tex}
+
+\input{charactercreation.tex}
+
+\input{introtoskills.tex}
+
+\input{sessionzero.tex}
+
+\newpage
+\input{skillslist.tex}
+
+\input{basicship.tex}
+
+\input{otherinformation.tex}
+\end{document}
