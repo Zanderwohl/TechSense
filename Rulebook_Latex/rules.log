@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7050 64-bit) (preloaded format=xelatex 2019.7.11)  20 DEC 2019 21:30
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7050 64-bit) (preloaded format=xelatex 2019.7.11)  20 DEC 2019 22:51
 entering extended mode
 **./rules.tex
 (rules.tex
@@ -276,10 +276,6 @@ LaTeX Info: Redefining \nameref on input line 47.
 \@outlinefile=\write3
 \openout3 = `rules.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 52.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -291,12 +287,17 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 ) [1
 
-]
-
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+] (rules.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+)
 \tf@toc=\write4
 \openout4 = `rules.toc'.
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -333,14 +334,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removed on input line 1.
 
 [3]) (charactercreation.tex [4]) (introtoskills.tex [5]) (sessionzero.tex
-[6]) [7] (skillslist.tex [8]) (basicship.tex [9] (ships.tex
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 1.
-))
+[6]) [7] (skillslist.tex [8]) (basicship.tex [9] (ships.tex))
 (otherinformation.tex [10] [11])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
 
@@ -361,16 +355,16 @@ Package rerunfilecheck Warning: File `rules.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `rules.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E
-(rerunfilecheck)             After:  06C65ED60B9F86B6F4DF541E5FC2BD27.
+(rerunfilecheck)             Before: 06C65ED60B9F86B6F4DF541E5FC2BD27
+(rerunfilecheck)             After:  8B1EA95EECA3C715C19783B4A3E1FF98.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
  ) 
 Here is how much of TeX's memory you used:
- 8321 strings out of 427669
- 116108 string characters out of 3144343
- 204310 words of memory out of 3000000
- 12330 multiletter control sequences out of 15000+200000
- 7753 words of font info for 40 fonts, out of 3000000 for 9000
+ 8332 strings out of 427669
+ 116249 string characters out of 3144343
+ 206138 words of memory out of 3000000
+ 12338 multiletter control sequences out of 15000+200000
+ 7761 words of font info for 41 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  28i,11n,45p,870b,326s stack positions out of 5000i,500n,10000p,200000b,50000s
 
