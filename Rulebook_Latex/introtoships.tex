@@ -1,0 +1,156 @@
+
+
+
+
+\section{Ships}
+
+\par
+If you want to travel the stars, it's likely you're going to want a ship to get around in. Most ships in \getTitle\, are \textit{torch ships}. A torch ship is a ship that, within the universe, still obeys normal physics like orbital mechanics (that is, doesn't fly around like an airplane), but its engines are absurdly powerful.
+
+\par
+Despite many attempts to be as realistic as reasonable, faster-than-light travel (\textit{FTL}) is also possible in \getTitle . We made this concession only to allow for wider exploration. Near-light travel would allow travel to other solar systems within a lifetime, but only to those within the ship. To the outside universe, decades would go by. So we have faster-than-light drives.
+
+\par
+Ships have many differences between them, so here is an overview of what ships can have.
+
+\subsection{Maneuvering}
+
+\subsubsection{Burns}
+\par
+A \textit{burn} is any time an engine turns on, and causes the velocity of the ship to change. All maneuvers are made through burns. Burns cost fuel, of course.
+
+\subsubsection{Ballistics}
+\par
+Ballistics are traditional rocket maneuvering using optimized burns. These burns can be quite complex\footnote{Not rocket science complex, but \textit{almost}.} thanks to the unintuitive nature of orbits. You can't just point the direction you want and \textit{go}. You've got to calculate how your velocity will change over time as planets and moons pull on your ship.
+
+\par
+Fortunately, we've included several charts for simple calculations, and program tools to do some more complex stuff... to a point. If you already know about orbital mechanics and just \textit{love} calculating plane changes and phase matching then go ahead.
+
+\par
+If you don't love all that stuff just use the charts or do torch burns for everything. What's a torch burn? Glad you asked...
+
+\subsubsection{Torch Burns}
+\par
+You know what we just said about not being able to point where you want and just \textit{going?} Actually, you can, it's just absurdly expensive. But as we mentioned, our ships can be absurdly powerful. A Torch burn is also called a \textit{burn-flip-burn}. You point to your target, burn toward it until you reach the halfway point, flip 180\textdegree , then burn until you come to a stop.
+
+\par
+The key is that since there's no brakes or friction in space, you have to spend just as much time slowing down as you did speeding up. Hence, the flip at the halfway point. It's also possible to have a coast period in the middle, though obviously you wouldn't speed up as much, and would consume less fuel.
+
+\par
+The equation for a torch burn is:
+
+\par
+TODO: Add the torch burn equation.
+
+\subsubsection{FTL Jumps}
+\par
+Write this later... once we figure out how they work.
+
+\subsection{Equation Cheat Sheet}
+
+\subsection{Energy Source}
+\par
+Typically, an energy source for a ship will be nuclear. There are exceptions, though.
+
+\subsubsection{Fission}
+
+\subsubsection{Fusion}
+
+\subsubsection{Exotic}
+
+\subsection{Engines}
+
+\subsubsection{NERVA}
+
+\subsubsection{Nuclear Pulse}
+
+\subsubsection{Magneto Inertial Fusion}
+
+\subsubsection{Nuclear Saltwater}
+
+\subsubsection{Ion}
+
+\subsubsection{Aerospike}
+
+\subsubsection{Sabre}
+
+\subsubsection{Anti-Matter}
+
+\subsubsection{Exotic Matter}
+
+\subsection{FTL Engine}
+
+\subsection{Structure}
+
+\subsubsection{Robust}
+
+\subsubsection{Medium}
+
+\subsubsection{Lightweight}
+
+\subsubsection{Foil}
+
+\subsubsection{Plate}
+
+\subsubsection{Reinforced}
+
+\subsection{Armaments}
+
+\subsubsection{Lasers}
+\par
+These are basically useless for combat. They can ablate a little material, but not fast enough to save you when you're in a bind. But sure, you can have lasers.
+
+%[Laser info here]
+
+\subsubsection{Railguns}
+\par
+This, now \textit{this} is what you want to use. Nothing can ruin someone's day faster than hundreds of metal slugs slamming into their ship at thousands of meters per second.
+
+\par
+Be cautious, since some planets may not take kindly to you generating debris in important orbital lanes.
+
+%[Railgun info here]
+
+\subsubsection{Missiles}
+
+%[Missile info here]
+
+\subsubsection{Magnetic Pulse}
+
+%[MP info here]
+
+\subsubsection{Anti-Missile Missiles}
+
+\subsection{Sensors}
+
+\subsubsection{Radio}
+Pictures, spectro-analysis, radio telescopes.
+
+\subsubsection{Astrogation}
+
+\subsubsection{Telescopes}
+
+\subsubsection{Docking Radar}
+
+\subsubsection{Gravitometer}
+
+\subsection{Ansible}
+\par
+An ansible is similar to a radio, but its signal propagates faster than the speed of light\footnote{In real life, this would either mean that relativity would be violated, since information would be travelling faster than light, or that causality would be violated, since it would be possible to recieve news before it even \textit{happened}, under certain conditions. But with FTL travel, we've already broken one of those two.}. This makes it possible to communicate with other ships and bases several lightyears away without having to wait several years for that light to travel. In \getTitle, there are two types of ansibles.
+
+\subsubsection{Type A}
+\par
+The Type-A ansible can communicate with a constant round-trip time of seven minutes to any other Type-A ansible you know of, within twenty lightyears. The signal can be repeated from base to base, of course, so any non-isolated base of your faction within twenty lightyears of you can probably carry the message further, with additional delays.
+
+\subsubsection{Type B}
+\par
+A Type-B ansible can communicate instantly (or with arbitrarily low latency) to a \textit{paired} Type-B from any distance. Unfortunately, the link between two Type-Bs only lasts seven days \textit{relative to each ansible's time}.
+
+\par
+For example, if ansible 1 is at 'normal' time, but ansible 2 is experiencing time at an accelerated rate, then the ansibles fall out of sync when ansible 2 experiences the passage of about seven days. The link is destroyed when one ansible experiences seven days first.
+
+\par
+It takes fifteen minutes to sync two Type-Bs together, and they must be physically next to each other, in the same frame of reference\footnote{This means they should be under the same gravity and both moving the same speed. This will not be a problem if both ansibles are on the same ship, or on two ships that are docked together.}.
+
+\par
+Typically, shuttles of a ship will have Type-Bs on them, each with a matching Type-B on the main ship. Even being on two different planets in the same system, radio signals can take hours.

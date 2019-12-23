@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7050 64-bit) (preloaded format=xelatex 2019.7.11)  20 DEC 2019 22:51
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7050 64-bit) (preloaded format=xelatex 2019.7.11)  22 DEC 2019 23:16
 entering extended mode
 **./rules.tex
 (rules.tex
@@ -289,15 +289,11 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 ] (rules.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 3.
+(Font)              <12> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 3.
+(Font)              <8> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 3.
-)
-\tf@toc=\write4
-\openout4 = `rules.toc'.
-
+(Font)              <6> on input line 4.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -305,7 +301,11 @@ Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[2] (introduction.tex) (feelingsvslasers.tex
+[2])
+\tf@toc=\write4
+\openout4 = `rules.toc'.
+
+ [3] (introduction.tex) (rpgbasics.tex) (feelingsvslasers.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\leavevmode@ifvmode' on input line 1.
@@ -333,39 +333,35 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 2.00006pt
 (hyperref)                removed on input line 1.
 
-[3]) (charactercreation.tex [4]) (introtoskills.tex [5]) (sessionzero.tex
-[6]) [7] (skillslist.tex [8]) (basicship.tex [9] (ships.tex))
-(otherinformation.tex [10] [11])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
+[4]) (charactercreation.tex [5]) (introtoskills.tex [6]) (sessionzero.tex
+[7]) (skillslist.tex [8] [9]) (introtoships.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 24.
+ [10] [11] [12]) [13]
+(basicship.tex (ships.tex [14])) (otherinformation.tex [15] [16])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
 
-Overfull \hbox (84.50317pt too wide) in paragraph at lines 57--77
+Overfull \hbox (84.50317pt too wide) in paragraph at lines 61--81
 \TU/lmr/m/n/12 Lasers and Feelings with Advancement and other such Jiggery Poke
 ry. If not, see <[]https://gnu.org/licenses/[]>
  []
 
-[12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
+[17]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
  (rules.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 77.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
-
-
-Package rerunfilecheck Warning: File `rules.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `rules.out':
-(rerunfilecheck)             Before: 06C65ED60B9F86B6F4DF541E5FC2BD27
-(rerunfilecheck)             After:  8B1EA95EECA3C715C19783B4A3E1FF98.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 81.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
+Package rerunfilecheck Info: File `rules.out' has not changed.
+(rerunfilecheck)             Checksum: B3C094C91550436EB6821F9A4B5BC558.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  ) 
 Here is how much of TeX's memory you used:
- 8332 strings out of 427669
- 116249 string characters out of 3144343
- 206138 words of memory out of 3000000
- 12338 multiletter control sequences out of 15000+200000
- 7761 words of font info for 41 fonts, out of 3000000 for 9000
+ 8349 strings out of 427669
+ 116612 string characters out of 3144343
+ 207100 words of memory out of 3000000
+ 12343 multiletter control sequences out of 15000+200000
+ 7785 words of font info for 44 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 28i,11n,45p,870b,326s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,11n,45p,870b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on rules.pdf (12 pages).
+Output written on rules.pdf (17 pages).
