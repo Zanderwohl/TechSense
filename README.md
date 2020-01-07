@@ -1,7 +1,7 @@
 # TechSense
 A free hard Sci Fi RPG with variable crunch.
 
-##Welcome to TechSense!
+## Welcome to TechSense!
 
 TS (for short) aims to provide a crunch-lite space adventure with a hard sci-fi background. Inspired by the works of authors like Robert Heinlein and Ursula K. Le Guin, TS aims to give truly alien experiences without delving into space-fantasy or space-opera. We designed this system to keep things at least a little realistic, without bogging players down with excessive math or killyjoy-type limits on what you can do.
 
