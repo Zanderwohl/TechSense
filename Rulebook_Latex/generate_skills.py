@@ -72,6 +72,7 @@ joke_contents += "\n%And assembled via generate_skills.py"
 
 joke_contents += "\n\n\\section{Joke \\skillC s and \\abilityPC}"
 joke_contents += "\n\\hypertarget{joke}{}"
+joke_contents += "\n\\par\nThese aren't real \\skill s and \\abilityPC . Use them for 'the lolz' only."
 
 for joke in jokes:
     joke_contents += paragraph(joke[0], joke[1])
