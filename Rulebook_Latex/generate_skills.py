@@ -19,6 +19,7 @@ list = list[list[:,0].argsort()]
 skills_feelings = []
 skills_lasers = []
 abilities = []
+jokes = []
 
 for row in list:
     if(row[2] == "feelings"):
@@ -27,6 +28,8 @@ for row in list:
         skills_lasers.append(row[0:2])
     if(row[2] == "ability"):
         abilities.append(row[0:2])
+    if(row[2] == "joke"):
+        jokes.append(row[0:2])
 
 file_contents = "%Contains a list of all skills an abilities"
 file_contents +="\n%Each list should be in alphabetical order."
@@ -58,3 +61,20 @@ with open("skillslist.tex", "w") as text_file:
     text_file.write(file_contents)
 
 print("Completed file 'skillslist.tex'.")
+
+
+joke_contents = "%Contains a list of all joke entries"
+joke_contents +="\n%List should be in alphabetical order."
+joke_contents += "\n%Generated based on data in 'skills.csv'"
+joke_contents += "\n%And assembled via generate_skills.py"
+
+joke_contents += "\n\n\\section{Joke \\skillC s and \\abilityPC}"
+joke_contents += "\n\\hypertarget{joke}{}"
+
+for joke in jokes:
+    joke_contents += paragraph(joke[0], joke[1])
+    
+with open("jokelist.tex", "w") as text_file:
+    text_file.write(joke_contents)
+
+print("Completed file 'jokelist.tex'.")
