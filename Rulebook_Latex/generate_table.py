@@ -13,7 +13,7 @@ list = np.array(list)
 
 #print(list)
 
-file_contents = "\\begin{tabular}{"
+file_contents = "\\begin{tabular}{|"
 
 first = True
 for item in list[0]:
@@ -22,16 +22,18 @@ for item in list[0]:
         first = False
     else:
         file_contents += "| "
-    file_contents += item + " "
-    
+    file_contents += str(item) + " "
+
 list = list[1:]
 
 #print(list)
 
 
-file_contents += "}\n"
+file_contents += "|}\n"
 
-for row in list:
+for i, row in enumerate(list):
+    if i == 0:
+        file_contents += "\\hline"
     file_contents += "\t"
     first = True
     for item in row:
@@ -40,11 +42,13 @@ for row in list:
         else:
             file_contents += " & "
         file_contents += item
-    file_contents += "\\\\ \\hline"
+    file_contents += "\\\\"
+    if i == 0:
+        file_contents += "\\hline"
     file_contents += "\n"
 
 
-file_contents += "\\end{tabular}"
+file_contents += "\\hline\\end{tabular}"
 
 print(file_contents)
 

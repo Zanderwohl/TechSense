@@ -1,4 +1,5 @@
-"l","c","r"
-"Size","Name","Other"
-"big","Goofer","An example"
-"small","Beeboo","Another one"
+l,c,r,r,r,r,r
+Name,Diameter,Dry Mass,Wet Mass,Max Mass,Power,Accel.
+The Hammer,70 m, 120 kT, 160 kT, 185 kT, idk, 3g
+The Spritely,30 m, 40 kT, 55 kT, 62 kT, idk, 6g
+The Cheat,30 m, 40 kT, 60 kT, 120 kT, idk, 6g

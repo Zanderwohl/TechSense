@@ -74,7 +74,8 @@ Because the slices are 3D out of the 4D shape that all matter has, the ship appe
 
 \paragraph{Energy Usage}A jump takes up more energy the farther away it is. The energy a jump takes, where \textit{d} is the distance in lightyears and \textit{e} is the resulting energy cost in megajoules is given by:
 
-\[e = \energyLightyearFactor\]
+\par
+\[e = \energyLightyearFactor\, MW\]
 
 \paragraph{Restrictions}Like many mechanics in \getTitle, certain restrictions and failures are story-driven. There are no story-mechanical reasons a jump cannot work, but the \gm may restrict the ability to punch-jump under certain circumstances. Here are some reasons the FTL drive may not work:
 
@@ -94,35 +95,127 @@ Because the slices are 3D out of the 4D shape that all matter has, the ship appe
 \par
 Typically, an energy source for a ship will be nuclear. There are exceptions, though.
 
+\par
+In \getTitle , energy is measured in Megawatts, abbreviated as MW.
+
 \subsubsection{Fission}
+
+\par
+Ah, fission. Baby's first nuclear reactor. Nuclear reactors on present-day earth are fission reactors. A result of the Manhattan project, fission was researched orginally to make bombs to help the United States blast entire cities away in one go. Fission reactors are heavy and not quite as fun as other atomic toys.
+
+\par
+Fission reactors use fuel rods of Uranium-235, Uranium-233, or Plutonium-239\footnote{This is the stuff used in atom bombs. Maybe reactors on \textsuperscript{239}P are illegal in many locales. Campaign idea?}. \getTitle\, doesn't much distinguish between these types of fuel for practical purposes, other than that these materials may have different availabilities in different locations, different prices, and that a given reactor will only take the fuel it was designed for.
+
+\par
+Fisison reactors produce waste rods when they are spent. They still contain around 85\% fuel, but too sparce (i.e. not dense enough) to continue using as fuel. Locals do not take kindly to the dumping of spent fuel rods. The materials can have a half life in the hundreds of thousands of years, and produce dangerous amounts of radiation. Note also that though fuel may be spent slowly, a minimum "critical mass" of material must be packed into a sphere, or else the reaction will fizzle out. This sphere is less than fifteen centimeters in diameter.
+
+\paragraph{Fission Fuel Consumption Chart}\footnote{Sourced largely from \href{http://www.projectrho.com/public_html/rocket/atomicfuel.php}{Project Rho: Atomic Fuel}}
+\paragraph{}
+
+\vspace{1\baselineskip}
+\begin{tabular}{| r | r | r | r | r |}
+
+\hline
+
+Fuel & MeV & J/Kg & 1000 MW Burn & Ciritical Mass \\
+
+\hline
+
+\textsuperscript{235}U & 202.5 MeV & $83.14 \times 10^{12}$ J/Kg & 0.00001208 Kg/s & 52 Kg \\
+
+\textsuperscript{233}U & 197.9 MeV & $81.95 \times 10^{12}$ J/Kg & 0.00001220 Kg/s & 15 Kg \\
+
+\textsuperscript{239}P & 207.1 MeV & $83.61 \times 10^{12}$ J/Kg & 0.00001196 Kg/s & 10 Kg \\
+
+Lazy Estimations & 200 MeV & $8 \times 10^{13}$ J/Kg & 0.00001 Kg/s & 10-50 Kg \\
+
+\hline
+
+\end{tabular}
+\vspace{1\baselineskip}
+
+\par
+\textit{Where:}
+\par
+\textit{MeV is millions of electron-volts,}
+\par
+\textit{J/Kg is Joules produced per kilogram of the fuel, and}
+\par
+\textit{1000 MW Burn is grams consumed per second to produce 1000 MW.}
+
+\paragraph{}
+And the fuel burn rate total is:
+
+$r = p \times o$
+
+\par
+\textit{Where:}
+\par
+\textit{r is the nuclear fuel burn rate in Kg/s,}
+\par
+\textit{p is the required power that you wish to generate, and}
+\par
+\textit{o is the energy output of the fuel, measured in joules/kilogram (the J/Kg column).}
 
 \subsubsection{Fusion}
 
+\textit{Yet to research and write.}
+
 \subsubsection{Exotic}
+
+\textit{Yet to research and write.}
+
+\subsubsection{Fuel Breeders}
+
+Though not a direct power source, a breeder reactor can turn inert material into fissile material for use in other reactors. Spent fuel rods can usually be re-enriched for repeated use. More information on this in later editions.
 
 \subsection{Engines}
 
+There are multiple types of engines in \getTitle , some of them more conventional, and others near- or far-future technologies. The handwavium ones are more powerful.
+
 \subsubsection{NERVA}
+
+\textit{Yet to research and write.}
 
 \subsubsection{Nuclear Pulse}
 
+\textit{Yet to research and write.}
+
 \subsubsection{Magneto Inertial Fusion}
+
+\textit{Yet to research and write.}
 
 \subsubsection{Nuclear Saltwater}
 
+\textit{Yet to research and write.}
+
 \subsubsection{Ion}
+
+\textit{Yet to research and write.}
 
 \subsubsection{Aerospike}
 
+\textit{Yet to research and write.}
+
 \subsubsection{Sabre}
+
+\textit{Yet to research and write.}
 
 \subsubsection{Anti-Matter}
 
+\textit{Yet to research and write.}
+
 \subsubsection{Exotic Matter}
+
+\textit{Yet to research and write.}
 
 \subsection{FTL Engine}
 
+\textit{Yet to research and write.}
+
 \subsection{Structure}
+
+\textit{Yet to research and write.}
 
 \subsubsection{Robust}
 
@@ -158,10 +251,12 @@ Be cautious, since some planets may not take kindly to you generating debris in 
 
 \subsubsection{Missiles}
 
+\textit{Yet to research and write.}
 %[Missile info here]
 
 \subsubsection{Magnetic Pulse}
 
+\textit{Yet to research and write.}
 %[MP info here]
 
 \subsubsection{Anti-Missile Missiles}
@@ -173,11 +268,19 @@ Pictures, spectro-analysis, radio telescopes.
 
 \subsubsection{Astrogation}
 
+\textit{Yet to research and write.}
+
 \subsubsection{Telescopes}
+
+\textit{Yet to research and write.}
 
 \subsubsection{Docking Radar}
 
+\textit{Yet to research and write.}
+
 \subsubsection{Gravitometer}
+
+\textit{Yet to research and write.}
 
 \subsection{Ansible}
 \par
