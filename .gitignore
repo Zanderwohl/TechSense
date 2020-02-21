@@ -1,0 +1,7 @@
+Narrative/
+Planning/
+*.aux
+*.log
+*.out
+*.gz
+*.toc
