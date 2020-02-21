@@ -32,7 +32,7 @@
 "Star-Pilot","The \pc\, can pilot an interstellar vehicle.","ability"
 "Experimenter","Ability to operate medically on alien physiology.","ability"
 "Marksman","-1/level for accuracy on onboard instruments that require aiming like directional antenna or artillery.","tech"
-"Medicine Man","+2 on identifying cures from flora or fauna.","sense"
+"Medicine Man","+2/level on identifying cures from flora or fauna.","sense"
 "The Kirk Whack","+4 to nailing an alien on the back of the head using your hands clenched together in Kirkly prayer.","joke"
 "Sam","You have the most subtlety.","joke"
 "Zuko","Hardcore Parkour. -2/level on parkour. A \lasers\, skill.","joke"
