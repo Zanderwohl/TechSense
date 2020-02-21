@@ -10,3 +10,7 @@ Almost completely devoid of combat, TS instead focuses on role-playing and acqui
 
 
 We hope you enjoy playing, but remember: if you don’t like something, change it, and ignore any rules that ruin your fun. If ”fun” to you is always following all the charts and calculating orbital transfers and insertations, then stick to that. If it means skipping by all that and just spending some fuel, then that’s fine too. This is only a guide, after all. The most important part is the people at the table.
+
+## The Files
+
+The only game book so far is Rules.pdf, which provides the rules framework for the game. It does not quite provide enough information to play as of yet.
