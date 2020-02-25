@@ -1,17 +1,20 @@
 import pandas as pd
 import numpy as np
 
+
 def paragraph(header, content):
     paragraph = "\n\n\\paragraph{" + header + "}\n"
     paragraph += content
     return paragraph
 
+
 filename = input("filename:")
+
 
 list = pd.read_csv(filename + ".csv", header=None)
 list = np.array(list)
 
-#print(list)
+# print(list)
 
 file_contents = "\\begin{tabular}{|"
 
@@ -26,7 +29,7 @@ for item in list[0]:
 
 list = list[1:]
 
-#print(list)
+# print(list)
 
 
 file_contents += "|}\n"
@@ -52,7 +55,7 @@ file_contents += "\\hline\\end{tabular}"
 
 print(file_contents)
 
-#with open(filename + ".tex", "w") as text_file:
-    #text_file.write(file_contents)
+with open(filename + ".tex", "w") as text_file:
+    text_file.write(file_contents)
 
-#print("Completed file '" + filename + ".tex'.")
+print("Completed file '" + filename + ".tex'.")
