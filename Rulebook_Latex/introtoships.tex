@@ -159,6 +159,22 @@ $r = p \times o$
 
 \paragraph{Going Subcritical}As nuclear fuel is spent to generate power, keep track of how much fuel is spent. When the nuclear mass falls under the required critical mass, then the reactor will go \textit{subcritical}, meaning that it will no longer effectively generate power. The spent fuel rods must be removed, and rich fuel rods must be put in the reactor before it will continue generating power.
 
+\paragraph{Radiation Dosage}Presumably, your reactor has a shield against radiation. If someone enters the shielded area or the shield malfunctions in some way, you might get a nasty dose of radiation. Here's how to calculate how cooked you get\footnote{From \href{http://www.projectrho.com/public_html/rocket/atomicfuel.php}{Project Rho: Atomic Fuels: Radiation}}:
+
+$r = (\frac{1}{2} \times kW) / d^{2}$
+
+\par
+where:
+\par
+\textit{r is radiation dose in Sieverts per second.}
+\par
+\textit{kW is thermal power of the engine or reactor.}\footnote{This will be slightly higher than the energy output of the reactor, since you cannot collect all the thermal energy as electricity. You can assume, unless stated otherwise, the reactor will produce 220\% the amount of energy in heat as it can collect in electricity. This is based on current fission reactors having a 45\% thermal efficiency.}
+\par
+\textit{d is the distance from the reactor in meters (m).}
+
+\par
+Calculate how bad this affects a character in the \hyperlink{harm_radiation}{radiation dosage section} of the \hyperlink{harm}{bodily harm reference.}
+
 \subsubsection{Fusion}
 
 \textit{Yet to research and write.}
