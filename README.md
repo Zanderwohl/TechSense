@@ -13,11 +13,11 @@ We hope you enjoy playing, but remember: if you don’t like something, change i
 
 ## People
 
-You'll probably want at least four people to play: one game master, and three players.Seven is probably the largest comfortable group.
+You'll probably want at least four people to play: one game master, and three players. Seven is probably the largest comfortable group. The game master would be aided by an intuitive feel for differential and integral calculus, but it is not required.
 
 ## The Files
 
-The only game book so far is Rules.pdf, which provides the rules framework for the game. It does not quite provide enough information to play as of yet.
+The only game book so far is TechSense_Rules.pdf, which provides the rules framework for the game. It does not quite provide enough information to play as of yet.
 
 ### Changing the Rulebook
 
@@ -38,3 +38,13 @@ python generate_table.py
 ```
 
 respectively. Of course, you will need Python installed. I used Python 3.8.
+
+generate_table.py will require inputting the .txt's file name after the script starts, sans extension.
+
+### Contributing
+
+Because this is a Free project, contributions are welcome.
+
+If you'd like to contribute, you can write new sections, campaigns, or additions, and submit them via a pull request on the this github repository. For modifications, please modify the LaTeX, files. For new books, submit the book as a new directory with the book, containing the .pdf and a subdirectory labeled "src" containing the LaTeX, files.
+
+New campaign and reference books, and reference charts would be very welcome.
