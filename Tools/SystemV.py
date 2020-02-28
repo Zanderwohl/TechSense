@@ -1,5 +1,6 @@
 from tkinter import *
-#import SystemC
+# import SystemC
+
 
 class Window(Frame):
     
@@ -10,54 +11,55 @@ class Window(Frame):
 
         self.pack(fill=BOTH, expand=1)
 
-        exitButton = Button(self, text="Exit", command=self.v_exit)
-        exitButton.place(x = 0, y = 0)
+        exit_button = Button(self, text="Exit", command=self.v_exit)
+        exit_button.place(x=0, y=0)
 
-        self.addMenuBar()
-        self.addFileDrop()
-        self.addEditDrop()
-        self.addCalcDrop()
+        self.__add_menu_bar__()
+        self.__add_file_drop__()
+        self.__add_edit_drop__()
+        self.__add_calc_drop__()
 
-    def addMenuBar(self):
+    def __add_menu_bar__(self):
         self.menu = Menu(self.master)
         self.master.config(menu=self.menu)
 
-    def addFileDrop(self):
-        fileMenu = Menu(self.menu)
-        fileMenu.add_command(label="New")
-        fileMenu.add_command(label="Open")
-        fileMenu.add_command(label="Save")
-        fileMenu.add_command(label="Save as...")
-        fileMenu.add_separator()
-        fileMenu.add_command(label="Exit", command=self.v_exit);
-        self.menu.add_cascade(label="File", menu=fileMenu)
+    def __add_file_drop__(self):
+        file_menu = Menu(self.menu)
+        file_menu.add_command(label="New")
+        file_menu.add_command(label="Open")
+        file_menu.add_command(label="Save")
+        file_menu.add_command(label="Save as...")
+        file_menu.add_separator()
+        file_menu.add_command(label="Exit", command=self.v_exit);
+        self.menu.add_cascade(label="File", menu=file_menu)
 
-    def addEditDrop(self):
-        editMenu = Menu(self.menu)
-        editMenu.add_command(label="Duplicate")
-        editMenu.add_command(label="Time")
-        self.menu.add_cascade(label="Edit", menu=editMenu)
+    def __add_edit_drop__(self):
+        edit_menu = Menu(self.menu)
+        edit_menu.add_command(label="Duplicate")
+        edit_menu.add_command(label="Time")
+        self.menu.add_cascade(label="Edit", menu=edit_menu)
 
-    def addCalcDrop(self):
-        calcMenu = Menu(self.menu)
-        calcMenu.add_command(label="Torch Burn")
-        calcMenu.add_command(label="Hohmann Transfer")
-        calcMenu.add_separator()
-        calcMenu.add_command(label="Radio Time")
-        self.menu.add_cascade(label="Calculate", menu=calcMenu)
+    def __add_calc_drop__(self):
+        calc_menu = Menu(self.menu)
+        calc_menu.add_command(label="Torch Burn")
+        calc_menu.add_command(label="Hohmann Transfer")
+        calc_menu.add_separator()
+        calc_menu.add_command(label="Radio Time")
+        self.menu.add_cascade(label="Calculate", menu=calc_menu)
 
     def v_exit(self):
         self.controller.exit(1)
-        #User exit (0).
-        #SystemC.exit(0)
+        # User exit (0).
+        # SystemC.exit(0)
 
-def showWindow(controller):
+
+def show_window(controller):
     root = Tk()
     app = Window(root, controller)
 
     root.wm_title("Solar System")
-    root.geometry("320x200");
+    root.geometry("320x200")
 
-    root.mainloop() #show window
+    root.mainloop()  # show window
 
     return root

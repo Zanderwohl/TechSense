@@ -2,24 +2,26 @@ import SystemV
 import SystemM
 import System
 
-class SystemC():
-    def __init__(self, solarSystem):
-        self.ss = solarSystem
+
+class SystemC:
+    def __init__(self, solar_system):
+        self.ss = solar_system
         self.time = 0
     
     def exit(self, state):
         print('Exit function yet to be determined. (' + str(state) + ')')
 
-    def showWindow(self):
+    def show_window(self):
         print('Starting Solar System UI')
         i = 0
-        SystemV.showWindow(self)
+        SystemV.show_window(self)
         print('Done')
 
-    def setTime(self, newTime):
-        self.time = newTime
+    def set_time(self, new_time):
+        self.time = new_time
 
-solar = System.testSystem
+
+solar = System.test_system
 
 window = SystemC(solar)
-window.showWindow()
+window.show_window()
