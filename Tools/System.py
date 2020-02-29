@@ -7,7 +7,7 @@ class Body:
     def __init__(self, mass, name):
         self.mass = mass
         self.name = name
-        self.orbitRadius = 0
+        self.orbit_radius = 0
         self.parent_system = 0
         self.period = 0
 
@@ -18,21 +18,33 @@ class Body:
         return self.mass
 
     def calculate_orbital_period(self):
-        radius_cubed = self.orbitRadius * self.orbitRadius * self.orbitRadius
+        radius_cubed = self.orbit_radius * self.orbit_radius * self.orbit_radius
         num = 4 * math.pi * math.pi * radius_cubed
         denominator = G * self.parent_system.center.mass
         self.period = math.sqrt(num / denominator)
 
-    def get_orbit_angle(self, time):
+    def velocity(self):
+        return 2 * math.pi * self.orbit_radius / self.period
+
+    def get_orbit_angle(self, time, units='radians'):
         if self.period == 0:
             return 0
-        return 2 * math.pi * ((time % self.period) / self.period)
+        if units == 'radians':
+            return 2 * math.pi * ((time % self.period) / self.period)
+        else:
+            return math.degrees(2 * math.pi * ((time % self.period) / self.period))
+
+    def get_position(self, time, relative=False):
+        if relative:
+            return self.get_position_relative(time)
+        else:
+            return self.get_position_absolute(time)
 
     # relative to its parent.
     def get_position_relative(self, time):
         angle = self.get_orbit_angle(time)
-        x = self.orbitRadius * math.cos(angle)
-        y = self.orbitRadius * math.sin(angle)
+        x = self.orbit_radius * math.cos(angle)
+        y = self.orbit_radius * math.sin(angle)
         return x, y
 
     def get_position_absolute(self, time):
@@ -77,7 +89,7 @@ class System(Body):
         return 
 
 
-class Sun(Body):
+class Star(Body):
     def __init__(self, mass, name):
         Body.__init__(self, mass, name)
         self.mass = mass
@@ -85,27 +97,27 @@ class Sun(Body):
         self.period = 0
 
 
-class Planet(Body):
+class Planetoid(Body):
     def __init__(self, mass, name):
         Body.__init__(self, mass, name)
         
 
 def test_system():
     print('Building Test System')
-    sol = Sun(10, 'Sol')
-    solar = System('SomeSystem', sol)
+    sol = Star(10, 'Sol')
+    solar = System('Sol', sol)
 
     print(solar.mass)
 
-    hermes = Planet(1, 'Hermes')
+    hermes = Planetoid(1, 'Hermes')
     solar.add_child_body(hermes, 40)
 
     print(solar.mass)
 
-    earth = Planet(4, 'Orthe')
-    moon = Planet(1, 'Moon')
+    earth = Planetoid(4, 'Orthe')
+    moon = Planetoid(1, 'Luna')
 
-    earth_moon = System('Earth-Moon',earth)
+    earth_moon = System('Orthe-Luna', earth)
     earth_moon.add_child_body(moon, 3)
 
     solar.add_child_body(earth_moon, 70)
