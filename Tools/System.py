@@ -70,7 +70,7 @@ class System(Body):
 
     def mass_helper(self, bodies, total):
         # give me that tail end recursion
-        if not bodies: # if list empty
+        if not bodies:  # if list empty
             return total
         else:
             return self.mass_helper(bodies[1:], total + bodies[0].calculate_total_mass())
