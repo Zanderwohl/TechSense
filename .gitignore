@@ -6,4 +6,5 @@ Planning/
 *.gz
 *.toc
 Tools/.idea/
-Tools/__pycache__
+Tools/__pycache__/
+*.pyc

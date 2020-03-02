@@ -1,4 +1,7 @@
 import math
+import random
+
+import LocationNames
 
 G = 6.674 * (10 ** 11)
 
@@ -60,11 +63,14 @@ class Body:
         x2, y2 = other.get_position_absolute(time)
         return math.sqrt((y1 - y2)**2 + (y1 - y2)**2)
 
+    def __str__(self):
+        return self.name
+
 
 class System(Body):
     def __init__(self, name, center):
         self.name = name
-        self.center = center # can be a SYSTEM.
+        self.center = center  # can be a SYSTEM.
         center.set_parent_system(self)
         self.children = []
         self.mass = self.calculate_total_mass()
@@ -87,6 +93,13 @@ class System(Body):
         else:
             return self.mass_helper(bodies[1:], total + bodies[0].calculate_total_mass())
         return 
+
+    def __str__(self):
+        result = self.center.name + ' ('
+        for child in self.children:
+            result += str(child) + ', '
+        result += ')'
+        return result
 
 
 class Star(Body):
@@ -133,7 +146,30 @@ def test_system():
         print(earth.get_position_absolute(time))
         print(moon.get_position_absolute(time))
 
+    print(solar)
+
     return solar
 
 
-test_system()
+def random_system(seed=None):
+    if seed is None:
+        seed = random.randint(0, 1000000000)
+    random.seed(seed)
+    system_name = LocationNames.generate_name()
+    star = Star(15, system_name)
+    system = System(system_name, star)
+    planets = []
+    planets_count = random.randrange(2, 12)
+    for planet_index in range(planets_count):
+        new_planet = Planetoid(random.randrange(1, 10), system_name + ' ' + str(planet_index + 1))
+        planets.append(new_planet)
+        system.add_child_body(new_planet, planet_index ** 2)
+    return system
+
+
+if __name__ == "__main__":
+    # test_system()
+    print(random_system())
+
+
+

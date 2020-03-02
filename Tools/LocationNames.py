@@ -19,14 +19,30 @@ syllables = [
     "fy",
     "aardt",
     "fyn",
+    "kar",
+    "heid",
+    "ho",
+    "kel",
+    "chel",
+    "mod",
+    "ral",
+    "ear",
+    "the"
 ]
 
 
-def generate_name(n=1):
+def generate_name():
     syllables_shuffled = syllables.copy()
     random.shuffle(syllables_shuffled)
     return syllables_shuffled[0] + syllables_shuffled[1]
 
 
+def generate_names(n=1):
+    names = []
+    for i in range(n):
+        names.append(generate_name())
+    return names
+
+
 if __name__ == "__main__":
-    print(generate_name())
+    print(generate_names(10))
