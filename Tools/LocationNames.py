@@ -27,22 +27,31 @@ syllables = [
     "mod",
     "ral",
     "ear",
-    "the"
+    "the",
+    "arth",
+    "teth",
+    "let",
+    "dod",
 ]
 
 
 def generate_name():
     syllables_shuffled = syllables.copy()
     random.shuffle(syllables_shuffled)
-    return syllables_shuffled[0] + syllables_shuffled[1]
+    name = syllables_shuffled[0] + syllables_shuffled[1]
+    return name.capitalize()
 
 
 def generate_names(n=1):
     names = []
     for i in range(n):
+        if seed is not None:
+            seed = seed + 1
         names.append(generate_name())
     return names
 
 
 if __name__ == "__main__":
-    print(generate_names(10))
+    names = generate_names(10)
+    for name in names:
+        print(name)

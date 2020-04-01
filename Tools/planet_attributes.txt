@@ -1,0 +1,93 @@
+-root
+[surface]
+
+-surface
+[a] is frozen. [frozen]
+[a] is desolate. [desolate]
+There is no atmosphere. [vacuum]
+[a] is inhospitable. [hot]
+
+-a
+The planet
+The surface
+
+-notyetdone
+[a] is lush. [lush]
+[a] is temperate. [temperate]
+
+-desolate
+[vacuum] [norain]
+Between rocky cracks, gentle pools of clear water sit. [rain]
+Along a coastline, waves crash on a gravel beach, and salty water flows into shallow tidal pools. The smell of brine permeates the air. [rain]
+
+-lush
+Make it up.
+
+-temperate
+Make it up.
+
+-hot
+The heat is unbearable. [vacuum] [norain]
+The air is dry and scorching. [vacuum] [norain]
+
+-frozen
+Mountain ranges saddled with show extend north and south. [snoworrain]
+A frozen plain covered in snow extends as far as the eye can see. [snoworrain]
+A frozen valley is nestled between two mountains. The valley is overshadowed by a massive ancient glacier. [snoworrain]
+Standing on the edge of the glacier, it is easy to take survey of the surrounding landscape. [snoworrain]
+
+-snoworrain
+[snow]
+[rain]
+[snow]
+
+-snow
+The air is crisp, clear, and cold. The sky is [skycolor].
+The frosty air is biting. The sky is [skycolor].
+An overcast [skycolor] sky threatens to snow.
+A light rime of frost covers everything.
+Light snow falls from an overcast sky.
+It is snowing moderately.
+It is not snowing, but a roaring wind chills down to the bone. Snow blows across the ground beneath a [skycolor] sky.
+Ferocious wind blows snow falling from the cloudy sky.
+Silent snow falls thickly upon the ground.
+
+-vacuum
+Jagged [rockcolor] rocks poke out from the terrain. It is clear little water has eroded and smoothed the landscape.
+A sinuous landscape rolls up and down, [rockcolor] rock worn by water long evaporated.
+A smooth [rockcolor] surface is only broken up by craters.
+Little can be seen from the center of the crater but the [rockcolor] walls and space above.
+
+-rockcolor
+red
+brown
+gray
+light gray
+white
+black
+[rockcolor] and [rockcolor]
+
+-norain
+A dark, clear sky arches overhead.
+The sky is [skycolor].
+The atmosphere is thin and [skycolor].
+A [skycolor] dome arches overhead.
+The sky is [skycolor].
+
+-rain
+Whispy cirrus clouds streak across an open [skycolor] sky.
+Cumulus clouds lie flat like mashed potatoes on a glass sheet against the [skycolor] sky.
+An overcast sheet of clouds lies flat across the [skycolor] sky.
+Cumulonimbus clouds sit above the horizon, intermittently flashing. Thunder is heard faintly in the distance.
+Misty rain obscures the horizon.
+Torrential rain beats against the ground.
+Torrential rain falls as lightning strikes nearby.
+
+-skycolor
+deep blue
+bright blue
+sickly yellow
+amber
+sulfur-colored
+faintly green
+gentle red
