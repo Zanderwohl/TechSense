@@ -63,7 +63,7 @@ def describe_planet(forest):
         replacement = choose_from_keyword(forest, keyword)
         paragraph = replace_keyword(paragraph, next_symbol, end, replacement)
         next_symbol = find_symbol(paragraph)
-    return name + '\n' + paragraph
+    return name + '\n' + paragraph[0].upper() + paragraph[1:]
 
 
 def generate(forest, n=1, seed=None):
@@ -80,7 +80,8 @@ def generate(forest, n=1, seed=None):
 if __name__ == '__main__':
     attribute_forest = create_forest('planet_attributes.txt')
     # print(attribute_forest)
-    descriptions = generate(attribute_forest, n=1, seed=None)
+    seed = input('Seed:')
+    descriptions = generate(attribute_forest, n=1, seed=seed)
     for description in descriptions:
         print(description)
         print()
