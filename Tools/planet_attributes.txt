@@ -2,23 +2,76 @@
 [surface]
 
 -surface
-[a] is frozen. [frozen]
-[a] is desolate. [desolate]
+[quasidesolateplanet]
+[desolateplanet]
+[vacuumplanet]
+[frozenplanet]
+[hotplanet]
+[desertplanet]
+[lushplanet]
+[temperateplanet]
+
+-vacuumplanet
 There is no atmosphere. [vacuum]
+The air is too thin to be perceptible by humans. [vacuum]
+
+-frozenplanet
+[a] is frozen. [frozen]
+[a] is a tundra. [frozen]
+[a] is dominated by an icy wind that cuts sharply through all it touches. [frozen]
+Snow lies thick over [a]. [frozen]
+
+-desolateplanet
+[a] is desolate. [desolate]
+[a] is totally lifeless. [desolate]
+It is clear [a] could not support life. [desolate]
+
+-quasidesolateplanet
+[a] appears at first glance desolate. [quasidesolate]
+[a] seems to not support life at first glance. [quasidesolate]
+although [a] at first appears to be lifeless, there are signs of life. [quasidesolate]
+
+-hotplanet
+[a] is desolate. [hot]
 [a] is inhospitable. [hot]
+[a] is broiling. [hot]
+[a] is sweltering. [hot]
+
+-desertplanet
+[a] is hot. [desert]
+[a] is arid. [desert]
+[a] is sweltering. [desert]
+A desert planet, [a] shows few signs of thriving.
+
+-lushplanet
+[a] is lush. [lush]
+[a] appears to be jungle as far as the eye can see. [lush]
+[a] is overgrown. [lush]
+[a] is tropical. [lush]
+[a] seems to mostly be marsh. [lush]
+
+-temperateplanet
+[a] is temperate. [temperate]
+[a] is a moderate temperature. [temperate]
+[a] seems much like human planets. [temperate]
 
 -a
-The planet
-The surface
+the planet
+the surface
 
--notyetdone
-[a] is lush. [lush]
-[a] is temperate. [temperate]
+-quasidesolate
+Between rocky cracks, gentle pools of clear water sit. [rain] [cambrian]
+Along a coastline, waves crash on a gravel beach, and salty water flows into shallow tidal pools. The smell of brine permeates the air. [rain] [cambrian]
 
 -desolate
-[vacuum] [norain]
 Between rocky cracks, gentle pools of clear water sit. [rain]
 Along a coastline, waves crash on a gravel beach, and salty water flows into shallow tidal pools. The smell of brine permeates the air. [rain]
+[vacuum] [norain]
+[vacuum] [norain]
+Icy frozen lakes dot the landscape. [rain]
+In exposed rocks, the fossilized remains of ancient creatures tell the history of this planet.
+The unburied remains of civilization dot the horizon.
+The last remnants of a civilization can be seen in the intelligent structures nestled in stone.
 
 -lush
 Make it up.
@@ -29,6 +82,15 @@ Make it up.
 -hot
 The heat is unbearable. [vacuum] [norain]
 The air is dry and scorching. [vacuum] [norain]
+Waves of heat rise from the cracked ground. [vacuum] [norain]
+Dirt shows faint signs of erosion. [vacuum] [norain]
+
+-desert
+It oppressively humid. [vacuum] [rain]
+Waves of heat rise from the cracked ground. [vacuum] [rain]
+Dunes of sand run for miles in both directions. [rain]
+Dried streambeds show sign of erosion. [vacuum] [norain]
+The earth underfoot is utterly scorched. [vacuum] [norain]
 
 -frozen
 Mountain ranges saddled with show extend north and south. [snoworrain]
@@ -56,16 +118,28 @@ Silent snow falls thickly upon the ground.
 Jagged [rockcolor] rocks poke out from the terrain. It is clear little water has eroded and smoothed the landscape.
 A sinuous landscape rolls up and down, [rockcolor] rock worn by water long evaporated.
 A smooth [rockcolor] surface is only broken up by craters.
-Little can be seen from the center of the crater but the [rockcolor] walls and space above.
+Little can be seen from the center of the crater but the [rockcolor] rock walls and space above.
 
 -rockcolor
+[rawrockcolor]
+[rawrockcolor]
+[rawrockcolor]
+[rawrockcolor]
+[rawrockcolor] and light [rawrockcolor]
+[rawrockcolor] and dark [rawrockcolor]
+light [rawrockcolor] and dark [rawrockcolor]
+vibrant [rawrockcolor]
+light [rawrockcolor]
+dusty [rawrockcolor]
+fossil-speckled
+
+-rawrockcolor
 red
 brown
 gray
-light gray
+gray
 white
 black
-[rockcolor] and [rockcolor]
 
 -norain
 A dark, clear sky arches overhead.
@@ -73,8 +147,13 @@ The sky is [skycolor].
 The atmosphere is thin and [skycolor].
 A [skycolor] dome arches overhead.
 The sky is [skycolor].
+Dust blows gently across the ground.
+Persistent wind blows streams of dust across the ground.
 
 -rain
+[norain]
+[norain]
+[norain]
 Whispy cirrus clouds streak across an open [skycolor] sky.
 Cumulus clouds lie flat like mashed potatoes on a glass sheet against the [skycolor] sky.
 An overcast sheet of clouds lies flat across the [skycolor] sky.
@@ -91,3 +170,189 @@ amber
 sulfur-colored
 faintly green
 gentle red
+dark azul
+green
+white
+dull gray
+
+-life
+[tidal]
+[aquaticgrass]
+[simplefish]
+[fish]
+[aquaticmammals]
+[insects]
+[megainsects]
+[smallmammals]
+[mediummammals]
+[largemammals]
+
+-green
+[moss]
+[grass]
+[fern]
+[foliage]
+[palms]
+[coniferous]
+[deciduous]
+
+-cambrian
+Additionally, [cambriantypes] populate the water.
+Also, [cambriantypes] live in the water.
+The water is teeming with [cambriantypes].
+
+-cambriantypes
+[cambrianhelper], [cambrianhelper], [cambrianhelper], and [aquaticgrass]
+[cambrianhelper], [cambrianhelper], and [aquaticgrass]
+[cambrianhelper], and [aquaticgrass]
+[aquaticgrass]
+
+-cambrianhelper
+[tidal]
+[aquaticgrass]
+[simplefish]
+[tidal]
+[aquaticgrass]
+
+-cambriantypesold
+[tidal]
+[aquaticgrass]
+[aquaticgrass] and [tidal]
+[aquaticgrass], [tidal], and [tidal]
+[aquaticgrass], [tidal], [tidal], and [simplefish]
+
+-tidal
+[crustacean]
+[mollusk]
+[worm]
+[sponge]
+[puck]
+[smallcephalopod]
+[coral]
+[fungus]
+
+-coral
+[sizesm] [coralcolor] coral
+[sizesm] [coralcolor] organ-pipes
+[sizesm] [coralcolor] staghorn coral
+[sizesm] [coralcolor] pillar coral
+[sizesm] [coralcolor] elkhorn coral
+[sizesm] [coralcolor] seapen coral
+[sizesm] [coralcolor] soft coral
+[sizesm] [coralcolor] hard coral
+[sizesm] [coralcolor] stony coral
+
+-coralcolor
+[coralcolor] and [coralcolor]
+vibrant red
+vibrant greed
+bright blue
+cerulean blue
+black
+orange
+toxic orange
+jet-black
+deep blue
+fire-red
+grass-green
+rusty orange
+emerald
+snow-white
+white
+speckled gray
+purple
+royal purple
+twilight purple
+yellow
+pink
+
+-fungus
+fungi
+
+-crustacean
+crablike creatures
+shelled creatures with many legs
+long-legged crabs
+scorpionlike creatures
+articulated hard-shell arthropods
+
+-mollusk
+shell creatures
+barnacles
+clams
+
+-smallcephalopod
+[sizesm] [cephalopod]
+
+-cephalopod
+octopi
+squid
+nautiluses
+orthoceri
+
+-worm
+worms
+long worms
+fat worms
+hairy worms
+
+-sponge
+spongelike growths
+sea-sponges
+sponges
+
+-puck
+tiny, puck-like creatures
+living flat disks
+
+-aquaticgrass
+small grasses
+thin aquatic plants
+lily-pads
+several types of sea grass
+algae
+featherlike plants
+
+-simplefish
+[animalquantity] [sizesm] [fishtypes]
+
+-fishtypes
+fish
+minnows
+tadpoles
+crustaceans
+shrimp
+eels
+rays
+bony fish
+toothed fish
+
+-animalquantity
+solitary
+lone
+swarms of
+intermittent
+occasional
+masses of
+small groups of
+
+-size
+small
+tiny
+miniscule
+large
+medium
+enormous
+gargantuan
+long
+palm-sized
+human-sized
+short
+colossal
+diminutive
+
+-sizesm
+small
+tiny
+miniscule
+diminutive
